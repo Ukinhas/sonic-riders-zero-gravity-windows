@@ -6,6 +6,16 @@ Este repositório contém o runtime, os recompiladores e as adaptações de Wind
 
 ## Baixar e jogar no Windows
 
+### Pacote completo — sem importar ISO
+
+**[Baixar o instalador Windows completo](https://github.com/Ukinhas/sonic-riders-zero-gravity-windows/releases/download/v0.1.2-completo/Instalar-Sonic.exe)**
+
+Abra `Instalar-Sonic.exe`, escolha uma pasta e aguarde o download de 2,66 GB. Depois, abra `SonicRidersZeroGravity-Completo.exe` para jogar offline. Reserve 8 GB livres contando o EXE e os dados extraídos na primeira abertura. Não exige ISO separada, importação, compilação ou Python. O instalador usa .NET Framework 4.8 e verifica a integridade do download antes de concluir.
+
+Veja os [detalhes da versão completa](RELEASE-v0.1.2-completo.md). Os dados incorporados à distribuição mantêm sua titularidade original; a licença do runtime não se estende a eles.
+
+### Pacote alternativo — importação da própria ISO
+
 **[Baixar versão Windows v0.1.1](https://github.com/Ukinhas/sonic-riders-zero-gravity-windows/releases/tag/v0.1.1)** — versão experimental, pronta para executar, sem compilação, Python ou navegador.
 
 1. Baixe `SonicRidersZeroGravity-Windows-v0.1.1.zip` nos arquivos da Release (não o arquivo “Source code”).
