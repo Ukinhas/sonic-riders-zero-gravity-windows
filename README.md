@@ -2,7 +2,20 @@
 
 Projeto experimental e não oficial para executar a edição PS2 USA (`SLUS_216.42`) no Windows, baseado em [ps2-web-recomp](https://github.com/snuri00/ps2-web-recomp), de Samir Nuri.
 
-Este repositório contém o runtime, os recompiladores e as adaptações de Windows. **Não inclui o jogo, ISO, BIOS, executável recompilado, saves ou capturas de microcódigo VU.** Para compilar e jogar, forneça seus próprios arquivos locais. Não há vínculo com a SEGA.
+Este repositório contém o runtime, os recompiladores e as adaptações de Windows. A árvore de código não inclui ISO, BIOS, executável recompilado, saves ou capturas de microcódigo VU. Não há vínculo com a SEGA.
+
+## Baixar e jogar no Windows
+
+**[Baixar versão Windows v0.1.0](https://github.com/Ukinhas/sonic-riders-zero-gravity-windows/releases/tag/v0.1.0)** — versão experimental, pronta para executar, sem compilação, Python ou navegador.
+
+1. Baixe `SonicRidersZeroGravity-Windows-v0.1.0.zip` nos arquivos da Release (não o arquivo “Source code”).
+2. Extraia o ZIP inteiro e abra `Jogar-Sonic.exe`.
+3. Selecione sua ISO da edição **PS2 USA SLUS_216.42** e clique em **Jogar**.
+4. Mantenha a ISO no local escolhido. O aplicativo lembra o caminho e lê os dados diretamente dela.
+
+O download inclui o runtime nativo recompilado e suas bibliotecas, mas não a ISO, BIOS, arquivos de recursos do disco ou saves. O importador valida o hash do executável da ISO e extrai apenas esse arquivo para uso local; não verifica integralmente o disco. No primeiro uso, o jogo pode pedir a criação/formatação do cartão virtual.
+
+Requer Windows 10/11 x64, .NET Framework 4.8 e GPU/driver compatível com wgpu/Vulkan. Pacote sem assinatura digital. Saves e logs ficam em `%LOCALAPPDATA%/SonicRidersZeroGravity`. A versão anterior foi medida em RTX 4060; o novo fluxo de primeiro uso ainda não foi testado em um PC limpo.
 
 ## Estado atual
 
@@ -13,7 +26,7 @@ Este repositório contém o runtime, os recompiladores e as adaptações de Wind
 - Configuração de idioma do sistema em inglês. Um save existente pode preservar opções anteriores do jogo.
 - Patch de desbloqueio de conteúdo, com cópia de segurança do cartão existente. Não houve validação exaustiva de cada item desbloqueável.
 
-Python e ferramentas de desenvolvimento são necessários apenas na preparação/compilação. Este é um projeto de desenvolvimento, não um download pronto do jogo.
+Python e ferramentas de desenvolvimento são necessários apenas para quem deseja recompilar o projeto. Quem usa o ZIP da Release não precisa dessas ferramentas.
 
 ## Controles
 

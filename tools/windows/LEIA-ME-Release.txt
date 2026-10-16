@@ -1,0 +1,45 @@
+SONIC RIDERS: ZERO GRAVITY - WINDOWS (EXPERIMENTAL)
+
+1. Extraia o ZIP inteiro para uma pasta. Nao execute dentro do ZIP.
+2. Abra Jogar-Sonic.exe.
+3. Clique em Selecionar ISO e escolha sua copia da edicao PS2 USA SLUS_216.42.
+4. Clique em Jogar. Nas proximas vezes o caminho fica lembrado.
+
+Nao precisa compilar, instalar Python, abrir terminal ou usar navegador.
+A ISO nao e copiada: mantenha-a disponivel no caminho escolhido.
+ISOs de Wii, PAL, outras revisoes e arquivos compactados nao sao suportados.
+A verificacao confere o executavel da ISO; nao valida todos os arquivos do disco.
+
+REQUISITOS
+Windows 10/11 x64 com .NET Framework 4.8, GPU com driver atualizado compativel
+com wgpu/Vulkan. O runtime anterior foi medido em RTX 4060; outras GPUs
+e o fluxo de primeiro uso em um PC limpo ainda nao foram validados.
+Pacote experimental, sem assinatura digital.
+
+PRIMEIRO USO
+Sem save anterior, o jogo pode pedir para formatar/criar o cartao virtual.
+Use setas e K para confirmar. A formatacao e do cartao virtual do jogo.
+O idioma do sistema e ingles; preferencias de saves anteriores podem prevalecer.
+Nao ha save de terceiros no pacote. O desbloqueio de conteudo esta no runtime.
+
+CONTROLES
+W/A/S/D: movimento; setas: menus/direcional.
+K: X / confirmar; L: bola / voltar; I: triangulo; J: quadrado.
+U: L1; O: R1; Enter/Esc: Start/pausa; Backspace: Select.
+1/2: L2/R2; 3/4: L3/R3; F11: tela cheia.
+
+SAVES E PROBLEMAS
+Saves, caminho da ISO e game.log ficam em:
+%LOCALAPPDATA%\SonicRidersZeroGravity
+O save existente nao e substituido. Uma copia antes do desbloqueio e preservada.
+Se mover a ISO, selecione-a novamente. Se der erro, consulte game.log.
+
+Temporizacao NTSC de 60 Hz, sem aceleracao intencional.
+Microtravadas ainda podem ocorrer; nao ha garantia de 60 FPS constantes.
+Nao possui multiplayer online. Projeto nao oficial, sem afiliacao com a SEGA.
+O download inclui o runtime recompilado, mas nao a ISO, BIOS, arquivos de
+recursos do disco ou saves. Forneca sua propria copia do jogo.
+
+Codigo, creditos e licencas:
+https://github.com/Ukinhas/sonic-riders-zero-gravity-windows
+Leia LICENSE.txt e a pasta licenses.
