@@ -21,3 +21,7 @@ Projeto experimental e não oficial, sem vínculo com a SEGA. A licença MIT do 
 Esta atualização acrescenta a distribuição do pacote completo e o instalador de download. O EXE do jogo não foi recompilado nesta versão. A integridade das partes e do EXE é verificada por SHA-256; não representa um novo teste de todas as pistas.
 
 SHA-256 do EXE completo: `61d5952de74a77b6501c7564358cbcf4da28fb25de394ed6c5959e3c203c751d`.
+
+## Teste do instalador publicado
+
+Download real pelo instalador, montagem do EXE, extração e duas aberturas aprovados com o perfil anterior isolado e a ISO original bloqueada. Os 16 arquivos extraídos passaram na verificação de integridade. Veja [o relatório e seus limites](https://github.com/Ukinhas/sonic-riders-zero-gravity-windows/blob/main/TESTES-v0.1.2-completo.md): teste no mesmo Windows, não em uma instalação limpa; teclado e corridas não foram revalidados neste ensaio.
