@@ -1,6 +1,6 @@
 param(
     [Parameter(Mandatory=$true)][string]$RuntimeDirectory,
-    [string]$Version = 'v0.1.0'
+    [string]$Version = 'v0.1.1'
 )
 $ErrorActionPreference = 'Stop'
 $repo = (Resolve-Path (Join-Path $PSScriptRoot '../..')).Path

@@ -1,14 +1,16 @@
 # Compilar para Windows
 
-Para jogar sem compilar, use o ZIP da [Release Windows](https://github.com/Ukinhas/sonic-riders-zero-gravity-windows/releases/tag/v0.1.0) e selecione sua ISO.
+Para jogar sem compilar, use o ZIP da [Release Windows](https://github.com/Ukinhas/sonic-riders-zero-gravity-windows/releases/tag/v0.1.1) e importe sua ISO uma vez.
 
 ## Pacote público com importador
 
 `tools/windows/IsoLauncher.cs` é a janela WinForms de seleção/validação da ISO. Ela chama a entrada de argumentos do runtime já compilado, mantendo os controles e a temporização. O nome interno `--diagnostic` seleciona essa entrada; nenhum limite de frames, captura ou benchmark é ativado.
 
-`tools/windows/package-release.ps1 -RuntimeDirectory <pasta-do-runtime> -Version v0.1.0` compila o importador com o compilador C# do .NET Framework e cria o ZIP e SHA256SUMS em `local/releases/`. A pasta de origem deve conter o runtime otimizado documentado, DLLs e licenças. O script aceita apenas o hash exato dessa build e copia uma lista explícita de arquivos, sem copiar `data/`. Para uma nova build, revise e atualize o hash esperado antes de empacotar.
+`tools/windows/package-release.ps1 -RuntimeDirectory <pasta-do-runtime> -Version v0.1.1` compila o importador com o compilador C# do .NET Framework e cria o ZIP e SHA256SUMS em `local/releases/`. A pasta de origem deve conter o runtime otimizado documentado, DLLs e licenças. O script aceita apenas o hash exato dessa build e copia uma lista explícita de arquivos, sem copiar `data/`. Para uma nova build, revise e atualize o hash esperado antes de empacotar.
 
-O ZIP v0.1.0 reutiliza a build nativa otimizada anterior, com 173 rotinas VU. O importador e o empacotamento são novos; não foi realizado teste de primeiro uso em um PC limpo nesta publicação.
+O ZIP reutiliza a build nativa otimizada anterior, com 173 rotinas VU. Em v0.1.1, os dados são copiados para uma pasta de instalação com identificação única; um marcador atômico só é gravado após a verificação SHA-256 da cópia. A abertura seguinte usa essa instalação e não depende da ISO original. Cancelamentos removem somente a pasta temporária criada pela operação. Saves permanecem fora da instalação.
+
+Para testes isolados, `Jogar-Sonic.exe --profile <pasta-vazia> --import <iso>` executa a mesma importação usando outro diretório de dados/saves. `--setup` impede a inicialização automática e abre a janela. `ImporterTests.cs` contém testes de rejeição, cancelamento, isolamento e escrita atômica. Compile-o como console .NET Framework e passe `launcher.exe`, `iso` e um novo diretório de teste. Não use seus saves pessoais como diretório de testes.
 
 Este roteiro adapta os comandos da build local para caminhos configuráveis. O roteiro público ainda não foi executado do início ao fim em uma máquina limpa.
 

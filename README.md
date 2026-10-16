@@ -6,16 +6,17 @@ Este repositório contém o runtime, os recompiladores e as adaptações de Wind
 
 ## Baixar e jogar no Windows
 
-**[Baixar versão Windows v0.1.0](https://github.com/Ukinhas/sonic-riders-zero-gravity-windows/releases/tag/v0.1.0)** — versão experimental, pronta para executar, sem compilação, Python ou navegador.
+**[Baixar versão Windows v0.1.1](https://github.com/Ukinhas/sonic-riders-zero-gravity-windows/releases/tag/v0.1.1)** — versão experimental, pronta para executar, sem compilação, Python ou navegador.
 
-1. Baixe `SonicRidersZeroGravity-Windows-v0.1.0.zip` nos arquivos da Release (não o arquivo “Source code”).
+1. Baixe `SonicRidersZeroGravity-Windows-v0.1.1.zip` nos arquivos da Release (não o arquivo “Source code”).
 2. Extraia o ZIP inteiro e abra `Jogar-Sonic.exe`.
 3. Selecione sua ISO da edição **PS2 USA SLUS_216.42** e clique em **Jogar**.
-4. Mantenha a ISO no local escolhido. O aplicativo lembra o caminho e lê os dados diretamente dela.
+4. Aguarde a importação dos dados para a instalação local (aproximadamente 5 GB livres).
+5. Nas próximas vezes, basta abrir `Jogar-Sonic.exe`. A ISO original não precisa mais estar conectada ou no mesmo caminho.
 
-O download inclui o runtime nativo recompilado e suas bibliotecas, mas não a ISO, BIOS, arquivos de recursos do disco ou saves. O importador valida o hash do executável da ISO e extrai apenas esse arquivo para uso local; não verifica integralmente o disco. No primeiro uso, o jogo pode pedir a criação/formatação do cartão virtual.
+O download inclui o runtime nativo recompilado e suas bibliotecas, mas não a ISO, BIOS, arquivos de recursos do disco ou saves. O importador valida o executável da edição suportada, copia os dados e compara o SHA-256 da cópia com o fluxo original. Isso verifica a cópia, não certifica todos os recursos contra um dump de referência. No primeiro uso, o jogo pode pedir a criação/formatação do cartão virtual. Os dados continuam necessários: eles ficam instalados no PC, não desaparecem por ser um executável nativo.
 
-Requer Windows 10/11 x64, .NET Framework 4.8 e GPU/driver compatível com wgpu/Vulkan. Pacote sem assinatura digital. Saves e logs ficam em `%LOCALAPPDATA%/SonicRidersZeroGravity`. A versão anterior foi medida em RTX 4060; o novo fluxo de primeiro uso ainda não foi testado em um PC limpo.
+Requer Windows 10/11 x64, .NET Framework 4.8 e GPU/driver compatível com wgpu/Vulkan. Pacote sem assinatura digital. Instalação, saves e logs ficam em `%LOCALAPPDATA%/SonicRidersZeroGravity`. Os testes usam perfil vazio no PC de desenvolvimento (RTX 4060); isso não equivale a testar todas as dependências em uma reinstalação do Windows ou em outras GPUs.
 
 ## Estado atual
 

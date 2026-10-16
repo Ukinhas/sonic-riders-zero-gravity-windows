@@ -3,17 +3,21 @@ SONIC RIDERS: ZERO GRAVITY - WINDOWS (EXPERIMENTAL)
 1. Extraia o ZIP inteiro para uma pasta. Nao execute dentro do ZIP.
 2. Abra Jogar-Sonic.exe.
 3. Clique em Selecionar ISO e escolha sua copia da edicao PS2 USA SLUS_216.42.
-4. Clique em Jogar. Nas proximas vezes o caminho fica lembrado.
+4. Clique em Jogar e aguarde a importacao (aproximadamente 5 GB livres).
+5. Nas proximas vezes, abra Jogar-Sonic.exe: o jogo inicia automaticamente.
 
 Nao precisa compilar, instalar Python, abrir terminal ou usar navegador.
-A ISO nao e copiada: mantenha-a disponivel no caminho escolhido.
+A importacao copia os dados para uma instalacao local e verifica a copia com
+SHA-256. Depois de concluir, a ISO original nao precisa permanecer no mesmo
+caminho nem estar conectada. Nao apague a instalacao em LocalAppData.
 ISOs de Wii, PAL, outras revisoes e arquivos compactados nao sao suportados.
 A verificacao confere o executavel da ISO; nao valida todos os arquivos do disco.
 
 REQUISITOS
 Windows 10/11 x64 com .NET Framework 4.8, GPU com driver atualizado compativel
 com wgpu/Vulkan. O runtime anterior foi medido em RTX 4060; outras GPUs
-e o fluxo de primeiro uso em um PC limpo ainda nao foram validados.
+nao foram validadas. Os testes de primeiro uso usam um perfil vazio neste PC,
+nao uma reinstalacao completa do Windows.
 Pacote experimental, sem assinatura digital.
 
 PRIMEIRO USO
@@ -32,7 +36,9 @@ SAVES E PROBLEMAS
 Saves, caminho da ISO e game.log ficam em:
 %LOCALAPPDATA%\SonicRidersZeroGravity
 O save existente nao e substituido. Uma copia antes do desbloqueio e preservada.
-Se mover a ISO, selecione-a novamente. Se der erro, consulte game.log.
+Se a instalacao estiver incompleta, selecione a ISO para importar novamente.
+Se der erro, consulte game.log. Para abrir o importador sem iniciar o jogo,
+execute Jogar-Sonic.exe com a opcao --setup.
 
 Temporizacao NTSC de 60 Hz, sem aceleracao intencional.
 Microtravadas ainda podem ocorrer; nao ha garantia de 60 FPS constantes.
