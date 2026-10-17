@@ -31,6 +31,16 @@ Os saves e dados preparados ficam em `%LOCALAPPDATA%\SonicRidersZeroGravity`. Pr
 
 Veja os [detalhes da versão completa](RELEASE-v0.1.2-completo.md). Os dados incorporados à distribuição mantêm sua titularidade original; a licença do runtime não se estende a eles.
 
+## Imagens do jogo
+
+Capturas reais da versão Windows durante os testes, na resolução original do jogo.
+
+| Sonic em corrida | Nightshade Ruins |
+|:---:|:---:|
+| ![Sonic em uma corrida, com o cenário 3D e o HUD do jogo](docs/images/sonic-corrida.png) | ![Corrida na pista Nightshade Ruins](docs/images/nightshade-ruins.png) |
+| **Seleção de personagens** | **Seleção de equipamentos** |
+| ![Menu de seleção de personagens com Sonic selecionado](docs/images/selecao-personagens.png) | ![Menu de equipamentos com Rainbow selecionado](docs/images/selecao-equipamentos.png) |
+
 <details>
 <summary>Versão alternativa v0.1.1 — importar a própria ISO</summary>
 
