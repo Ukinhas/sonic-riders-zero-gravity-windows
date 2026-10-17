@@ -1,6 +1,6 @@
 # Compilar para Windows
 
-Para jogar sem compilar, use o ZIP da [Release Windows](https://github.com/Ukinhas/sonic-riders-zero-gravity-windows/releases/tag/v0.1.1) e importe sua ISO uma vez.
+Para jogar sem compilar, use o instalador da [Release Windows completa](https://github.com/Ukinhas/sonic-riders-zero-gravity-windows/releases/tag/v0.1.2-completo). A [versão alternativa com importador](https://github.com/Ukinhas/sonic-riders-zero-gravity-windows/releases/tag/v0.1.1) continua disponível para quem deseja fornecer sua própria ISO.
 
 ## Pacote público com importador
 

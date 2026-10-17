@@ -118,4 +118,4 @@ O modo online não foi implementado. 120 FPS reais, mantendo a velocidade origin
 - Dependências externas conservam suas próprias licenças; inclua-as ao distribuir qualquer build permitida.
 - Sonic Riders: Zero Gravity e seus elementos pertencem aos respectivos titulares. A licença deste código não licencia os dados do jogo.
 
-O [README original](README-upstream.md) descreve a base genérica, inclusive outros jogos; suas afirmações não constituem testes desta adaptação.
+A [documentação do projeto-base](https://github.com/snuri00/ps2-web-recomp/tree/c628ae843209f6e4cef34ec04efb6267a1618882) descreve o runtime genérico, inclusive outros jogos; suas afirmações não constituem testes desta adaptação. As notas das versões anteriores permanecem no [histórico de Releases](https://github.com/Ukinhas/sonic-riders-zero-gravity-windows/releases).
